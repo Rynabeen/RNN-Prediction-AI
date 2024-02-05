@@ -1,3 +1,19 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from tensorflow import keras
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, LSTM, Dense
+from tensorflow.keras.optimizers import Adam
+import requests
+from bs4 import BeautifulSoup
+import sqlite3
+import pandas as pd
+from sqlite3.dbapi2 import DateFromTicks
+import time
+from keras.models import Sequential
+from keras.models import Sequential
+from keras.layers import SimpleRNN, Dense
+
 def prepare_data(data, n_steps):
     X, y = [], []
     for i in range(len(data)):
